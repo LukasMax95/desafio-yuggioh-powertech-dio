@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/containers_and_frames.css">
+    <link rel="stylesheet" href="src/styles/buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="src/assets/favicon/Favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Yu-Gi=Oh! Jo-Ken-Po!</title>
+    
+</head>
+<body>
+    <audio id="bgm" loop>
+        <source src="src/assets/audios/egyptian_duel.mp3" type="audio/mp3"/>
+    </audio>
+    <header>
+        <h1>Yu-Gi-Oh! Jo-Ken-Po!</h1>
+        <h3>Powered by Digital Innovation One and Powertech Ifood</h3>
+    </header>
+    <div class="background_video">
+        <video class="video" autoplay loop muted>
+            <source src="src/assets/video/yugi.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="container__left framed-golden-2">
+            <div class="scorebox frame">
+                <span id="win">
+                    Win: 0
+                </span>
+                <span id="lose">
+                    Lose: 0
+                </span>
+            </div>
+            <div class="menu_avatar">
+                <img src="" alt="" id="card-img">
+            </div>
+            <div class="card_details frame">
+                <p id="card-name">
+                    -
+                </p>
+                <p id="card-type">
+                    -
+                </p>
+            </div>
+        </div>
+        <div class="container__right">
+            <div class="card_box_container framed-clean">
+                <div class="card_box framed" id="opponent"></div>
+                <div class="card_versus ">
+                    <div class="card-infield">
+                        <img
+                            id="player-card"
+                            height="180px"
+                            width="125px"
+                        >
+                    </div>
+                    <img
+                        src="src/assets/icons/millenium2.png"
+                        height="100px"
+                    >
+                    <div class="card-infield">
+                        <img
+                            id="opponent-card"
+                            height="180px"
+                            width="125px"
+                        >
+                    </div>
+                </div>
+                <div class="challenge-button">
+                    <button
+                        id="next-duel"
+                        class="rpgui-button"
+                        onclick="resetDuel()"
+                    >
+                        Challenge
+                    </button>
+                </div>
+                
+                <div class="card_box framed" id="player"></div>
+            </div>
+        </div>
+    </div>
+    <script src="src/scripts/engine.js"></script>
+</body>
+</html>

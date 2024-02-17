@@ -34,6 +34,25 @@
   background-position: center;
 }
 
+.framed-clean {
+  /* border */
+  border-style: solid;
+  border-image-source: url("../assets/rpg/border-image.png");
+  border-image-repeat: repeat;
+  border-image-slice: 6 6 6 6;
+  border-image-width: 18px;
+  border-width: 15px;
+  padding: 12px;
+
+  /* internal border */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  background-color: rgba(0,0,0,.5);
+
+}
+
 /* game div with golden background image*/
 .framed-golden {
   /* border */
