@@ -1,9 +1,6 @@
-# Yu-Gi-Oh | Jo-ken-po Edition
+# Yu-Gi-Oh! Jo-ken-po!
+- Powered by Powertech Ifood and Digital Innovation One
 
-Jogo de jokenpo que criei para explicar conceitos de lógica de programação aplicados a jogos
+Minha versão do jogo Jokenpo de Yugioh.
 
-conceitos abordados:
-
-- Armazenamento e gerenciamento de estado manual
-- Funções limpas
-- Organização de código
+Concluindo o Desafio de Projeto final do bootcamp de desenvolvimento de jogos.
